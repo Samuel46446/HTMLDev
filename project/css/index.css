@@ -1,0 +1,19 @@
+.button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #10d509;
+    background-color: #13b752;
+    margin: 50px auto;
+}
+
+.image{
+    display: block;
+    float: left;
+    margin: 100px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(31, 30, 32);
+}

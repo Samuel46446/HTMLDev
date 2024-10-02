@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <title> Quiz de programmation </title>
+      <link rel="icon" href="textures/logo.png" type="image/png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <div class="image"></div><img src="textures/bannière.png" alt="" width=1024px height=562px></div>
+        <div class="content" id="content"></div>
+        <button class="button" id="randomPageButton"><h1>Commencer ?</h1></button>
+        <script>
+            const pages = ["commencer1.html", "commencer2.html", "commencer3.html", "commencer4.html"];
+            document.getElementById('randomPageButton').onclick = function() {
+                const randomPage = pages[Math.floor(Math.random() * pages.length)];
+                window.location.href = randomPage;
+            };
+        </script>        
+  </body>
+</html>
