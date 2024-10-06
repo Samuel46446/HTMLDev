@@ -2,9 +2,12 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #10d509;
-    background-color: #13b752;
-    margin: 50px auto;
+    margin: 10px auto;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
 }
 
 .image{
@@ -37,7 +40,37 @@ th {
     color: #13b752;
 }
 
-code{
-    background-color: gray;
-    color: darkred;
+pre, code {
+    color: rgb(207, 150, 81) !important; /* Forcer le texte en noir */
+    background-color: black !important;
+}
+
+.title{
+    color: blueviolet;
+}
+
+.question{
+    color: coral;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Utiliser la même police que le bouton de base */
+}
+
+.button-link:hover {
+    background-color: #45a049; /* Couleur au survol */
+}
+
+.loose{
+    color: blueviolet;
+    text-align: center;
+    text-size-adjust: 100px;
 }

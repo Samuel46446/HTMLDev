@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <title> Question 1 </title>
+      <link rel="icon" href="textures/logo.png" type="image/png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+
+          <!-- Inclusion de Highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <!-- Lancer Highlight.js -->
+    <script>hljs.highlightAll();</script>
+
+    </head>
+    <body>
+
+        <div class="title"><h2>Niveau 1</h2></div>
+        <div class="question"><h1>Quel est l'erreur dans ce programme Python :</h1></div>
+
+        <pre><code class="language-pyhton">
+            a=51
+            b=31
+            c=40
+            if a == b:
+                print("a = b")
+            else if a == c:
+                print("a = c")
+            else:
+                print("b = c")
+        </code></pre>
+            
+        <table>
+            <thead>
+                <th>
+                    <a href="perdu.html" class="button-link"><h1>ajout de ';'</h1></a>
+                </th>
+                <th>
+                    <a href="perdu.html" class="button-link"><h1>ajout de '()'</h1></a>
+                </th>
+            </thead>
+            <thead>
+                <th>
+                    <a href="perdu.html" class="button-link"><h1>remplacement de c par d</h1></a>
+                </th>
+                <th>
+                    <button class="button" id="randomPageButton"><h1>remplacement de else if par elif</h1></button>
+                </th>
+            </thead>
+        </table>
+        
+        <script>
+            const pages = ["2/quest1.html", "2/quest2.html", "2/quest3.html", "2/quest4.html"];
+            document.getElementById('randomPageButton').onclick = function() {
+                const randomPage = pages[Math.floor(Math.random() * pages.length)];
+                window.location.href = randomPage;
+            };
+        </script>
+  </body>
+</html>
