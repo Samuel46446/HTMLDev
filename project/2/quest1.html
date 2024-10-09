@@ -18,28 +18,33 @@
     <body>
 
         <div class="title"><h2>Niveau 2</h2></div>
-        <div class="question"><h1> :</h1></div>
+        <div class="question"><h1>Quel est l'erreur dans ce programme C :</h1></div>
 
-        <pre><code class="language-">
-                    </code></pre>
+        <pre><code class="language-c">
+int main (void)
+{
+    int i = 4 / 0;
+    printf("Div : %d", i);
+    return 0;
+}        </code></pre>
             
         <table>
             <thead>
                 <th>
-<a href="perdu.html" class="button-link"><h1>Mauvaise r�ponse 2</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Changement de type de int à double</h1></a>                </th>
                 <th>
-<a href="perdu.html" class="button-link"><h1>Mauvaise r�ponse 3</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Méthode main non correcte</h1></a>                </th>
             </thead>
             <thead>
                 <th>
-<a href="perdu.html" class="button-link"><h1>Mauvaise r�ponse 1</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Impression console incorrecte</h1></a>                </th>
                 <th>
-<button class="button" id="randomPageButton"><h1>Bonne r�ponse</h1></button>                </th>
+<button class="button" id="randomPageButton"><h1>Division par 0 impossible</h1></button>                </th>
             </thead>
         </table>
         
         <script>
-            const pages = ["2/quest1.html", "2/quest2.html", "2/quest3.html", "2/quest4.html"];
+            const pages = ["../3/quest1.html", "../3/quest2.html", "../3/quest3.html", "../3/quest4.html"];
             document.getElementById('randomPageButton').onclick = function() {
                 const randomPage = pages[Math.floor(Math.random() * pages.length)];
                 window.location.href = randomPage;

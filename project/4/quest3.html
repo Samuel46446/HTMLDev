@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-      <title> Question 2 </title>
+      <title> Question 4 </title>
       <link rel="icon" href="../textures/logo.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,42 +17,29 @@
     </head>
     <body>
 
-        <div class="title"><h2>Niveau 2</h2></div>
-        <div class="question"><h1>Quel type de variable régit les conditions suivantes :</h1></div>
+        <div class="title"><h2>Niveau 4</h2></div>
+        <div class="question"><h1>Que fait une fonction void :</h1></div>
 
-        <pre><code class="language-java">
-void a()
-{
-    int a = 45;
-    int b = 46;
-
-    if(b > a)
-    {
-        System.out.println("B est plus grand");
-    }
-    else
-    {
-        System.out.println("A est plus grand");
-    }
-}        </code></pre>
+        <pre><code class="language-cpp">
+void func();        </code></pre>
             
         <table>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Integer</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>N'est pas correct</h1></a>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Double</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Éxécute et stocke des variables</h1></a>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Condition</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Éxécute et retourne un type</h1></a>                </th>
                 <th>
-<button class="button" id="randomPageButton"><h1>Boolean</h1></button>                </th>
+<button class="button" id="randomPageButton"><h1>S'éxécute mais ne retourne rien</h1></button>                </th>
             </thead>
         </table>
         
         <script>
-            const pages = ["../3/quest1.html", "../3/quest2.html", "../3/quest3.html", "../3/quest4.html"];
+            const pages = ["../5/quest1.html", "../5/quest2.html", "../5/quest3.html", "../5/quest4.html"];
             document.getElementById('randomPageButton').onclick = function() {
                 const randomPage = pages[Math.floor(Math.random() * pages.length)];
                 window.location.href = randomPage;
