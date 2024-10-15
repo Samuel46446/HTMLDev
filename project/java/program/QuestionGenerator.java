@@ -18,56 +18,66 @@ public final class QuestionGenerator
     //&lt; = <
     //&gt; = >
 
-    private static void lvl9()
+    private static void lvl10()
     {
         List<String> questions = new ArrayList<>();
         List<String> languages = new ArrayList<>();
         List<String> codes = new ArrayList<>();
 
-        questions.add("");
-        languages.add("");
-        codes.add("");
-        List<String> reponses1 = genRep("", 
-        "", 
-        "", 
-        "");
-
-        questions.add("Quel mot clé est necessaire dans cette méthode pyhton :");
-        languages.add("py");
-        codes.add("class Personne:\n" + //
-                        "    def __init__(?, nom, age):\n" + //
-                        "        ?.nom = nom \n" + //
-                        "        ?.age = age \n" + //
-                        "");
-        List<String> reponses2 = genRep(
-        "self",
-        "def", 
-        "bool", 
-        "new");
-
-        questions.add("Comment acceder à une classe(titre) HTML via une feuille de style ?");
-        languages.add("css");
-        codes.add("???? {\n    color: blue;\n}");
-        List<String> reponses3 = genRep(
-        ".titre",
-        "classget(titre)",
-        "titre.class", 
-        "div>titre");
-        
-        questions.add("En C++ comment déclare t-on dans ce cas pour rendre publique cette fonction func ?");
+        questions.add("Quelle est l'extension d'une librairie C++ ?");
         languages.add("cpp");
-        codes.add("class Somme\n{\n    ????\n    void func()\n    {       std::cout << \"Bienvenue dans la fonction func\" << std::endl;\n    }\n};");
-        List<String> reponses4 = genRep("public:",
-        "public void func()",
-        "public Somme()",
-        "public ->");
+        codes.add("Lib.?");
+        List<String> reponses1 = genRep("lib", 
+        "cppLib", 
+        "cLib", 
+        "clib");
 
-        genQuestion(9, questions, languages, codes, reponses1, reponses2, reponses3, reponses4);
+        questions.add("Quelle est l'extension d'une librairie java ?");
+        languages.add("java");
+        codes.add("Log4j.?");
+        List<String> reponses2 = genRep(
+        "jar",
+        "class", 
+        "lib", 
+        "api");
+
+        questions.add("Que fait cette boucle while python :");
+        languages.add("python");
+        codes.add("points=10\r\n" + //
+                        "\r\n" + //
+                        "while points > 0:\r\n" + //
+                        "    somme=0\r\n" + //
+                        "    for i in range(10):\r\n" + //
+                        "        somme=somme+randDee()\r\n" + //
+                        "    print(\"La somme des 10 lancer de dés est de : \"+str(somme))\r\n" + //
+                        "    if somme%2 == 0:\r\n" + //
+                        "        points=points+1\r\n" + //
+                        "        print(\"Vous gagnez 1 point\")\r\n" + //
+                        "    else:\r\n" + //
+                        "        points = points - 2\r\n" + //
+                        "    print(\"Vous possédez : \" + str(points) + \" points !\")\r\n" + //
+                        "    start=str(input(\"Appuyez sur entrer pour une nouvelle partie\"))\r\n" + //
+                        "print(\"perdu\")");
+        List<String> reponses3 = genRep(
+        "Exécute un jeu de pile ou face tant que le joueur à plus de 0 points",
+        "Exécute un jeu de pile ou face tant que le joueur n'a plus de points",
+        "Exécute un jeu de pile ou face indéfiniment", 
+        "Exécute un jeu de pile ou face qui ne s'arrête jamais à cause d'une erreur");
+        
+        questions.add("Parmis les propositions qu'est ce qui est obligatoirement présent dans une page html :");
+        languages.add("html");
+        codes.add("&lt;???&gt;");
+        List<String> reponses4 = genRep("&lt;!DOCTYPE html&gt;",
+        "&lt;head&gt;",
+        "&lt;body&gt",
+        "&lt;title&gt");
+
+        genQuestion(10, questions, languages, codes, reponses1, reponses2, reponses3, reponses4);
     }
     
     public static void main(String[] args)
     {
-        lvl8();
+        lvl10();
     }
 
     private static void genQuestion(int lvl, List<String> problems, List<String> setLanguages, List<String> codes, List<String> reponsesListed1, List<String> reponsesListed2, List<String> reponsesListed3, List<String> reponsesListed4)
@@ -185,6 +195,49 @@ public final class QuestionGenerator
             // Sinon, on retourne un lien
             return "<a href=\"../perdu.html\" class=\"button-link\"><h1>" + texte + "</h1></a>";
         }
+    }
+
+    private static void lvl9()
+    {
+        List<String> questions = new ArrayList<>();
+        List<String> languages = new ArrayList<>();
+        List<String> codes = new ArrayList<>();
+
+        questions.add("Qu'est ce que la variable rA ?");
+        languages.add("cpp");
+        codes.add("int a = 10;\nint& rA = a;\n");
+        List<String> reponses1 = genRep("une référence", 
+        "un pointeur", 
+        "une bibliothèque", 
+        "un booléen");
+
+        questions.add("Quelle mot clé permet de corriger le programme java suivant : ");
+        languages.add("java");
+        codes.add("? Fruits\n{\n    BANANE, FRAISE, FRAMBOISE, POIRE\n}");
+        List<String> reponses2 = genRep(
+        "enum",
+        "class", 
+        "interface", 
+        "def");
+
+        questions.add("Que fait ce programme python ?");
+        languages.add("python");
+        codes.add("r=randInt(1, 128)\nprint(r)");
+        List<String> reponses3 = genRep(
+        "Affiche un entier aléatoire entre 1 et 128",
+        "Affiche un entier choisis",
+        "Affiche un double aléatoire entre 1 et 128", 
+        "Affiche le nom d'une classe");
+        
+        questions.add("Quelle mot clé permet de corriger le programme C# suivant :");
+        languages.add("cs");
+        codes.add("?(a)\n{\n    case 1:\n        print(a);\n    break;\n}");
+        List<String> reponses4 = genRep("switch",
+        "if",
+        "else",
+        "verif");
+
+        genQuestion(9, questions, languages, codes, reponses1, reponses2, reponses3, reponses4);
     }
 
     private static void lvl8()
