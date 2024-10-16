@@ -77,7 +77,15 @@ public final class QuestionGenerator
     
     public static void main(String[] args)
     {
-        lvl10();
+        lvl3();
+        lvl2();
+        lvl4();
+        lvl5();
+        lvl6();
+        lvl7();
+        lvl8();
+        lvl9();
+        //lvl10();
     }
 
     private static void genQuestion(int lvl, List<String> problems, List<String> setLanguages, List<String> codes, List<String> reponsesListed1, List<String> reponsesListed2, List<String> reponsesListed3, List<String> reponsesListed4)
@@ -133,7 +141,7 @@ public final class QuestionGenerator
                                         "\r\n" + //
                                         "        <div class=\"title\"><h2>Niveau "+lvl+"</h2></div>\r\n" + //
                                         "        <div class=\"question\"><h1>"+problem+" :</h1></div>\r\n" + //
-                                        "\r\n" + //
+                                        "\r\n<div class=\"home\"><a href=\"../index.html\" class=\"button-link\"><img src=\"../textures/home_button.png\" alt=\"\" width=50px height=50px></a></div>" + //
                                         "        <pre><code class=\"language-"+setLanguage+"\">\r\n" + //
                                        code + //
                                         "        </code></pre>\r\n" + //
@@ -304,7 +312,7 @@ public final class QuestionGenerator
         List<String> languages = new ArrayList<>();
         List<String> codes = new ArrayList<>();
 
-        questions.add("Java est un language qu'on qualifie :");
+        questions.add("Java est un language qu'on qualifie");
         languages.add("java");
         codes.add("public static void main()\n{\n    System.out.println(\"Hello world\");\n}");
         List<String> reponses1 = genRep("d'orienter objet", 
