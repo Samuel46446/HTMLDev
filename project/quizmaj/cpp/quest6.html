@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-      <title> Question 10 </title>
+      <title> Question 6 </title>
       <link rel="icon" href="../textures/logo.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,30 +17,31 @@
     </head>
     <body>
 
-        <div class="title"><h2>Niveau 10</h2></div>
-        <div class="question"><h1>Quelle est l'extension d'une librairie C++ ? :</h1></div>
+        <div class="title"><h2>Niveau 6</h2></div>
+        <div class="question"><h1>Que signifie ce caractère ajouter après un entier (*) ? :</h1></div>
 
-<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
-<pre><code class="language-cpp">
-Lib.?        </code></pre>
+<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>      
+  <pre><code class="language-c">
+int a = 10;
+int* iA = &a;        </code></pre>
             
         <table>
             <thead>
                 <th>
-                    <a href="../gagner.html" class="button-link"><h1>lib</h1></a>                </th>
+<button class="button" id="randomPageButton"><h1>Un pointeur</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>cppLib</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Un entier</h1></a>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>clib</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Une référence</h1></a>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>cLib</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Une structure</h1></a>                </th>
             </thead>
         </table>
         
         <script>
-            const pages = ["../11/quest1.html", "../11/quest2.html", "../11/quest3.html", "../11/quest4.html"];
+            const pages = ["../7/quest1.html", "../7/quest2.html", "../7/quest3.html", "../7/quest4.html"];
             document.getElementById('randomPageButton').onclick = function() {
                 const randomPage = pages[Math.floor(Math.random() * pages.length)];
                 window.location.href = randomPage;

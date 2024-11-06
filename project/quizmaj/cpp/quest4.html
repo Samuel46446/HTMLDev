@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-      <title> Question 10 </title>
+      <title> Question 4 </title>
       <link rel="icon" href="../textures/logo.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,30 +17,29 @@
     </head>
     <body>
 
-        <div class="title"><h2>Niveau 10</h2></div>
-        <div class="question"><h1>Quelle est l'extension d'une librairie C++ ? :</h1></div>
+        <div class="title"><h2>Niveau 4</h2></div>
+        <div class="question"><h1>Que fait une fonction void :</h1></div>
 
-<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
-<pre><code class="language-cpp">
-Lib.?        </code></pre>
+<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-cpp">
+void func();        </code></pre>
             
         <table>
             <thead>
                 <th>
-                    <a href="../gagner.html" class="button-link"><h1>lib</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Éxécute et stocke des variables</h1></a>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>cppLib</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>N'est pas correct</h1></a>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>clib</h1></a>                </th>
+<a href="../perdu.html" class="button-link"><h1>Éxécute et retourne un type</h1></a>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>cLib</h1></a>                </th>
+<button class="button" id="randomPageButton"><h1>S'éxécute mais ne retourne rien</h1></button>                </th>
             </thead>
         </table>
         
         <script>
-            const pages = ["../11/quest1.html", "../11/quest2.html", "../11/quest3.html", "../11/quest4.html"];
+            const pages = ["../5/quest1.html", "../5/quest2.html", "../5/quest3.html", "../5/quest4.html"];
             document.getElementById('randomPageButton').onclick = function() {
                 const randomPage = pages[Math.floor(Math.random() * pages.length)];
                 window.location.href = randomPage;

@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 1 </title>
-      <link rel="icon" href="../textures/logo_java.png" type="image/png">
+      <link rel="icon" href="../textures/logo_cpp.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -17,33 +17,33 @@
     </head>
     <body>
         <div class="title"><h2>Niveau 1</h2></div>
-        <div class="question"><h1>Comment multiplie t'on dans ce programme java ?</h1></div>
+        <div class="question"><h1>Quel est le type de la fonction main en C++ ?</h1></div>
         <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>
-        <pre><code class="language-java">
-            int a = 2+2;
-            int b = 2-2;
-            //c = 2 multiplier par 2
-            int d = 2/2;
+        <pre><code class="language-cpp">
+            ??? main()
+            {
+
+            }
         </code></pre>
         <div class="score">
-            <p>Score Java: <span id="javaScore"></span></p>
+            <p>Score C++: <span id="cppScore"></span></p>
         </div>
-                <table>
+        <table>
             <thead>
                 <th>
-                    <button class="button" onclick="bad('quest2.html')"><h1>c = 2 + 2 + 2 - 2</h1></button>
+                    <button class="button" onclick="addPoint('cpp', 'quest2.html')"><h1>int</h1></button>
                 </th>
                 <th>
-                    <button class="button" onclick="bad('quest2.html')"><h1>c = 2 x 2</h1></button>
+                    <button class="button" onclick="bad('quest2.html')"><h1>char</h1></button>
                 </th>
             </thead>
             <thead>
                 <th>
-                    <button class="button" onclick="addPoint('java', 'quest2.html')"><h1>c = 2 * 2</h1></button>
+                    <button class="button" onclick="bad('quest2.html')"><h1>float</h1></button>
                 </th>
                 <th>
-                    <button class="button" onclick="bad('quest2.html')"><h1>c = a + d</h1></button>
-                </th>                
+                    <button class="button" onclick="bad('quest2.html')"><h1>boolean</h1></button>
+                </th>
             </thead>
         </table>
         <script src="../settings.js"></script>

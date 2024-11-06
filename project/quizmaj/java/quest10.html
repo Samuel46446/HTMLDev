@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 10 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_java.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -18,32 +18,27 @@
     <body>
 
         <div class="title"><h2>Niveau 10</h2></div>
-        <div class="question"><h1>Quelle est l'extension d'une librairie java ? :</h1></div>
+        <div class="question"><h1>Quelle est l'extension d'une librairie java ?</h1></div>
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-java">
 Log4j.?        </code></pre>
-            
+<div class="score">
+    <p>Score Java: <span id="javaScore"></span></p>
+</div>           
         <table>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>class</h1></a>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>class</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>api</h1></a>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>api</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-                    <a href="../gagner.html" class="button-link"><h1>jar</h1></a>                </th>
+                    <button class="button" onclick="addPoint('java', 'finish.html')"><h1>jar</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>lib</h1></a>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>lib</h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../11/quest1.html", "../11/quest2.html", "../11/quest3.html", "../11/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>
