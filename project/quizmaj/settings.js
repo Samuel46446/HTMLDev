@@ -9,7 +9,7 @@ function bad(nextPage)
 {
     setTimeout(function() {
         window.location.href = nextPage;
-    }, 500);
+    }, 1);
 }
 
 // Fonction pour ajouter un point et rediriger vers la page suivante
@@ -19,22 +19,26 @@ function addPoint(language, nextPage) {
     localStorage.setItem(language + 'Point', currentScore + 1);
 
     // Mettre à jour l'affichage du score sur la page actuelle
-    //updateScores();
+    updateScores(language);
 
     // Redirection après un léger délai pour afficher le score mis à jour
     setTimeout(function() {
         window.location.href = nextPage;
-    }, 500);
+    }, 1);
 }
 
 // Fonction pour mettre à jour l'affichage des scores
-function updateScores() {
-    document.getElementById("javaScore").innerText = localStorage.getItem('javaPoint');
-    document.getElementById("cppScore").innerText = localStorage.getItem('cppPoint');
-    document.getElementById("pythonScore").innerText = localStorage.getItem('pythonPoint');
-    document.getElementById("webScore").innerText = localStorage.getItem('webPoint');
-    document.getElementById("sqlScore").innerText = localStorage.getItem('sqlPoint');
+function updateScores(language) {
+    const scoreElement = document.getElementById(language + "Score");
+    if (scoreElement) { // Vérifie si l'élément existe dans le HTML
+        scoreElement.innerText = localStorage.getItem(language + 'Point');
+    }
+    //document.getElementById(language+"Score").innerText = localStorage.getItem(language+'Point');
 }
 
 // Appel initial pour afficher les scores au chargement de la page
-updateScores();
+updateScores('java');
+updateScores('cpp');
+updateScores('python');
+updateScores('web');
+updateScores('sql');

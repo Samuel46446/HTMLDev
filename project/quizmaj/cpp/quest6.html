@@ -2,50 +2,42 @@
 <html lang="fr">
     <head>
       <title> Question 6 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_cpp.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
 
-          <!-- Inclusion de Highlight.js -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-
-    <!-- Lancer Highlight.js -->
+      <!-- Inclusion de Highlight.js -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+      <!-- Lancer Highlight.js -->
     <script>hljs.highlightAll();</script>
-
     </head>
     <body>
-
         <div class="title"><h2>Niveau 6</h2></div>
-        <div class="question"><h1>Que signifie ce caractère ajouter après un entier (*) ? :</h1></div>
-
-<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>      
-  <pre><code class="language-c">
-int a = 10;
-int* iA = &a;        </code></pre>
-            
+        <div class="question"><h1>Que signifie ce caractère (*) ajouter après un entier en C++ ?</h1></div>
+        <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>      
+        <pre><code class="language-cpp">
+        int a = 10;
+        int* iA = &a;        
+        </code></pre>
+        <div class="score">
+            <p>Score C++: <span id="cppScore"></span></p>
+        </div>              
         <table>
             <thead>
                 <th>
-<button class="button" id="randomPageButton"><h1>Un pointeur</h1></button>                </th>
+                    <button class="button" onclick="addPoint('cpp', 'quest7.html')"><h1>Un pointeur</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Un entier</h1></a>                </th>
+                    <button class="button" onclick="bad('quest7.html')"><h1>Un entier</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Une référence</h1></a>                </th>
+                    <button class="button" onclick="bad('quest7.html')"><h1>Une référence</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Une structure</h1></a>                </th>
+                    <button class="button" onclick="bad('quest7.html')"><h1>Une structure</h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../7/quest1.html", "../7/quest2.html", "../7/quest3.html", "../7/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>

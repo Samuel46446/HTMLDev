@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 7 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_cpp.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -18,35 +18,31 @@
     <body>
 
         <div class="title"><h2>Niveau 7</h2></div>
-        <div class="question"><h1>Le C++ est un language qu'on qualifie de :  :</h1></div>
+        <div class="question"><h1>Le C++ est un language qu'on qualifie de ?</h1></div>
 
-<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-cpp">
+<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
+<pre><code class="language-cpp">
 int main()
 {
     std::cout << "Hello world" << std::endl;
 }        </code></pre>
-            
+<div class="score">
+    <p>Score C++: <span id="cppScore"></span></p>
+</div>              
         <table>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Interprété</h1></a>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Interprété</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Objet</h1></a>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Objet</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-<button class="button" id="randomPageButton"><h1>Compilé</h1></button>                </th>
+                    <button class="button" onclick="addPoint('cpp', 'quest8.html')"><h1>Compilé</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Balisage</h1></a>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Balisage</h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../8/quest1.html", "../8/quest2.html", "../8/quest3.html", "../8/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>

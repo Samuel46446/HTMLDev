@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-      <title> Question 3 </title>
-      <link rel="icon" href="../textures/logo_cpp.png" type="image/png">
+      <title> Question 4 </title>
+      <link rel="icon" href="../textures/logo_sql.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -17,27 +17,27 @@
     </head>
     <body>
 
-        <div class="title"><h2>Niveau 3</h2></div>
-        <div class="question"><h1>Quelle est l'extension des fichiers C++ ?</h1></div>
+        <div class="title"><h2>Niveau 4</h2></div>
+        <div class="question"><h1>Quel variable est necessaire pour enregistrer cette clé étrangère ?</h1></div>
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
-<pre><code class="language-cpp">
-Jeu.?        </code></pre>
-<div class="score">
-    <p>Score C++: <span id="cppScore"></span></p>
-</div>
+<pre><code class="language-sql">
+    CONSTRAINT fk_ID_Menu ?(ID_Menu) REFERENCES MENU(ID_Menu)        </code></pre>
+    <div class="score">
+        <p>Score SQL: <span id="sqlScore"></span></p>
+    </div>
         <table>
             <thead>
                 <th>
-                    <button class="button" onclick="addPoint('cpp', 'quest4.html')"><h1>.cpp</h1></button>                </th>
+                    <button class="button" onclick="bad('quest5.html')"><h1>FINLAND KEY</h1></button>                </th>
                 <th>
-                    <button class="button" onclick="bad('quest4.html')"><h1>.c++</h1></button>                </th>
+                    <button class="button" onclick="bad('quest5.html')"><h1>PRIMARY KEY</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-                    <button class="button" onclick="bad('quest4.html')"><h1>.c</h1></button>                </th>
+                    <button class="button" onclick="bad('quest5.html')"><h1>FINAL KEY</h1></button>                </th>
                 <th>
-                    <button class="button" onclick="bad('quest4.html')"><h1>.cplusplus</h1></button>                </th>
+                    <button class="button" onclick="addPoint('sql', 'quest5.html')"><h1>FOREIGN KEY</h1></button>                </th>
             </thead>
         </table>
         <script src="../settings.js"></script>

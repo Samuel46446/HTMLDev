@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 8 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_cpp.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -18,7 +18,7 @@
     <body>
 
         <div class="title"><h2>Niveau 8</h2></div>
-        <div class="question"><h1>En C++ comment déclare t-on dans ce cas pour rendre publique cette fonction func ? :</h1></div>
+        <div class="question"><h1>En C++ comment déclarer cette fonction func pour la rendre publique ?</h1></div>
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
 <pre><code class="language-cpp">
@@ -29,28 +29,23 @@ class Somme
     {       std::cout << "Bienvenue dans la fonction func" << std::endl;
     }
 };        </code></pre>
-            
+<div class="score">
+    <p>Score C++: <span id="cppScore"></span></p>
+</div>       
         <table>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>public void func()</h1></a>                </th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>public void func()</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>public Somme()</h1></a>                </th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>public Somme()</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-<button class="button" id="randomPageButton"><h1>public:</h1></button>                </th>
+                    <button class="button" onclick="addPoint('cpp', 'quest9.html')"><h1>public:</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>public -></h1></a>                </th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>public -></h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../9/quest1.html", "../9/quest2.html", "../9/quest3.html", "../9/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>
