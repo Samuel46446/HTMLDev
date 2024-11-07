@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <title> Question 10 </title>
+      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+          <!-- Inclusion de Highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <!-- Lancer Highlight.js -->
+    <script>hljs.highlightAll();</script>
+
+    </head>
+    <body>
+
+        <div class="title"><h2>Niveau 10</h2></div>
+        <div class="question"><h1>Que fait cette boucle while python :</h1></div>
+
+<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-python">
+points=10
+
+while points > 0:
+    somme=0
+    for i in range(10):
+        somme=somme+randDee()
+    print("La somme des 10 lancer de dés est de : "+str(somme))
+    if somme%2 == 0:
+        points=points+1
+        print("Vous gagnez 1 point")
+    else:
+        points = points - 2
+    print("Vous possédez : " + str(points) + " points !")
+    start=str(input("Appuyez sur entrer pour une nouvelle partie"))
+print("perdu")        </code></pre>
+            
+        <table>
+            <thead>
+                <th>
+                    <a href="../gagner.html" class="button-link"><h1>Exécute un jeu de pile ou face tant que le joueur à plus de 0 points</h1></a>                </th>
+                <th>
+<a href="../perdu.html" class="button-link"><h1>Exécute un jeu de pile ou face tant que le joueur n'a plus de points</h1></a>                </th>
+            </thead>
+            <thead>
+                <th>
+<a href="../perdu.html" class="button-link"><h1>Exécute un jeu de pile ou face qui ne s'arrête jamais à cause d'une erreur</h1></a>                </th>
+                <th>
+<a href="../perdu.html" class="button-link"><h1>Exécute un jeu de pile ou face indéfiniment</h1></a>                </th>
+            </thead>
+        </table>
+        
+        <script>
+            const pages = ["../11/quest1.html", "../11/quest2.html", "../11/quest3.html", "../11/quest4.html"];
+            document.getElementById('randomPageButton').onclick = function() {
+                const randomPage = pages[Math.floor(Math.random() * pages.length)];
+                window.location.href = randomPage;
+            };
+        </script>
+  </body>
+</html>
