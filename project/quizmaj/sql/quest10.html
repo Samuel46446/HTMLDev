@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-      <title> Question 9 </title>
+      <title> Question 10 </title>
       <link rel="icon" href="../textures/logo_sql.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,13 @@
 
     </head>
     <body>
-        <div class="title"><h2>Niveau 9</h2></div>
-        <div class="question"><h1>On souhaite avoir la liste des films présent au cinéma, sans avoir de doublons ?</h1></div>
+        <div class="title"><h2>Niveau 10</h2></div>
+        <div class="question"><h1>Que faut il écrire pour insérer ces valeurs dans la table note ?</h1></div>
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
 <pre><code class="language-sql">
---cinema(fno, Titrefilm, HeureDebut, HeureFin, Duree);
+--note(eno, note, coeff, matiere, prof);
 
-SELECT ??????
-FROM cinema;
+???????? note(eno, note, coeff, matiere, prof) VALUES(1, 15, 1, 'Maths', 'Rouge');
 </code></pre>
     <div class="score">
         <p>Score SQL: <span id="sqlScore"></span></p>
@@ -31,15 +30,15 @@ FROM cinema;
         <table>
             <thead>
                 <th>
-                    <button class="button" onclick="bad('quest10.html')"><h1>NOT Titrefilm</h1></button>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>SAVE INTO</h1></button>                </th>
                 <th>
-                    <button class="button" onclick="addPoint('sql', 'quest10.html')"><h1>DISTINCT Titrefilm</h1></button>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>SET INTO</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-                    <button class="button" onclick="bad('quest10.html')"><h1>NOT DOUBLE Titrefilm</h1></button>                </th>
+                    <button class="button" onclick="addPoint('sql', 'finish.html')"><h1>INSERT INTO</h1></button>                </th>
                 <th>
-                    <button class="button" onclick="bad('quest10.html')"><h1>Titrefilm</h1></button>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>PUT INTO</h1></button>                </th>
             </thead>
         </table>
         <script src="../settings.js"></script>
