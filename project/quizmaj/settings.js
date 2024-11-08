@@ -5,6 +5,8 @@ if (!localStorage.getItem('pythonPoint')) localStorage.setItem('pythonPoint', 0)
 if (!localStorage.getItem('webPoint')) localStorage.setItem('webPoint', 0);
 if (!localStorage.getItem('sqlPoint')) localStorage.setItem('sqlPoint', 0);
 
+history.forward();
+
 function bad(nextPage)
 {
     setTimeout(function() {
@@ -33,7 +35,26 @@ function updateScores(language) {
     if (scoreElement) { // Vérifie si l'élément existe dans le HTML
         scoreElement.innerText = localStorage.getItem(language + 'Point');
     }
-    //document.getElementById(language+"Score").innerText = localStorage.getItem(language+'Point');
+}
+
+function arrow(language, nextPage, pageIndex)
+{
+    let currentScore = parseInt(localStorage.getItem(language + 'Point'), 10) || 0;
+    
+    if(currentScore != 0 && pageIndex == currentScore)
+    {
+        localStorage.setItem(language + 'Point', currentScore - 1);
+    }
+    else
+    {
+        localStorage.setItem(language + 'Point', currentScore);
+    }
+
+    //updateScores(language);
+
+    setTimeout(function() {
+        window.location.href = nextPage;
+    }, 1);
 }
 
 // Appel initial pour afficher les scores au chargement de la page

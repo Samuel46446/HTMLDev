@@ -6,5 +6,5 @@ function resetTotal()
     localStorage.setItem('webPoint', 0);
     localStorage.setItem('sqlPoint', 0);
 }
-
+history.forward();
 resetTotal();

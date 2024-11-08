@@ -1,3 +1,9 @@
+.retour{
+    width: 120px;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 .score{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 120px;
@@ -12,7 +18,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    margin: 10px auto;
+    margin: 5px auto;
     background-color: #4CAF50; /* Vert */
     color: white;
     border-radius: 5px;
@@ -54,6 +60,7 @@ th {
 pre, code {
     color: rgb(207, 150, 81) !important; /* Forcer le texte en noir */
     background-color: black !important;
+    font-size: 16px;
 }
 
 .title{
