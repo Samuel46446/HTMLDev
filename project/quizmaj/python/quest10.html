@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 10 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_python.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -18,7 +18,7 @@
     <body>
 
         <div class="title"><h2>Niveau 10</h2></div>
-        <div class="question"><h1>Que fait cette boucle while python :</h1></div>
+        <div class="question"><h1>Que fait cette boucle while python ?</h1></div>
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-python">
 points=10
@@ -36,28 +36,23 @@ while points > 0:
     print("Vous possédez : " + str(points) + " points !")
     start=str(input("Appuyez sur entrer pour une nouvelle partie"))
 print("perdu")        </code></pre>
-            
+<div class="score">
+    <p>Score Python: <span id="pythonScore"></span></p>
+</div>                  
         <table>
             <thead>
                 <th>
-                    <a href="../gagner.html" class="button-link"><h1>Exécute un jeu de pile ou face tant que le joueur à plus de 0 points</h1></a>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>Exécute un jeu de pile ou face indéfiniment</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Exécute un jeu de pile ou face tant que le joueur n'a plus de points</h1></a>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>Exécute un jeu de pile ou face tant que le joueur n'a plus de points</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Exécute un jeu de pile ou face qui ne s'arrête jamais à cause d'une erreur</h1></a>                </th>
+                    <button class="button" onclick="bad('finish.html')"><h1>Exécute un jeu de pile ou face qui ne s'arrête jamais à cause d'une erreur</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Exécute un jeu de pile ou face indéfiniment</h1></a>                </th>
+                    <button class="button" onclick="addPoint('python', 'finish.html')"><h1>Exécute un jeu de pile ou face tant que le joueur à plus de 0 points</h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../11/quest1.html", "../11/quest2.html", "../11/quest3.html", "../11/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>

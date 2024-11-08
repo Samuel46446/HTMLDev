@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <title> Question 5 </title>
+      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+          <!-- Inclusion de Highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <!-- Lancer Highlight.js -->
+    <script>hljs.highlightAll();</script>
+
+    </head>
+    <body>
+
+        <div class="title"><h2>Niveau 5</h2></div>
+        <div class="question"><h1>Que signifie rgb pour cette fonction css qui définie la couleur de l'arrière plan ? :</h1></div>
+
+<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-css">
+body {
+    background-color: rgb(31, 30, 32);
+}
+        </code></pre>
+            
+        <table>
+            <thead>
+                <th>
+<a href="../perdu.html" class="button-link"><h1>Les couleurs Blue White Red servant à l'encodage numérique</h1></a>                </th>
+                <th>
+<a href="../perdu.html" class="button-link"><h1>Les couleurs Rose Gray Blue servant à l'encodage numérique</h1></a>                </th>
+            </thead>
+            <thead>
+                <th>
+<button class="button" id="randomPageButton"><h1>Les couleurs Red Green Blue servant à l'encodage numérique</h1></button>                </th>
+                <th>
+<a href="../perdu.html" class="button-link"><h1>Les couleurs Red Gray Blue servant à l'encodage numérique</h1></a>                </th>
+            </thead>
+        </table>
+        
+        <script>
+            const pages = ["../6/quest1.html", "../6/quest2.html", "../6/quest3.html", "../6/quest4.html"];
+            document.getElementById('randomPageButton').onclick = function() {
+                const randomPage = pages[Math.floor(Math.random() * pages.length)];
+                window.location.href = randomPage;
+            };
+        </script>
+  </body>
+</html>

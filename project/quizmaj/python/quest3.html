@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 3 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_python.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -16,34 +16,28 @@
 
     </head>
     <body>
-
         <div class="title"><h2>Niveau 3</h2></div>
-        <div class="question"><h1>Quel est l'extension des fichiers python :</h1></div>
+        <div class="question"><h1>Quel est l'extension des fichiers python ?</h1></div>
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-python">
 Snake.?        </code></pre>
-            
+<div class="score">
+    <p>Score Python: <span id="pythonScore"></span></p>
+</div>
         <table>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>.serpent</h1></a>                </th>
+                    <button class="button" onclick="bad('quest4.html')"><h1>.serpent</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>.python</h1></a>                </th>
+                    <button class="button" onclick="bad('quest4.html')"><h1>.python</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>.p</h1></a>                </th>
+                    <button class="button" onclick="bad('quest4.html')"><h1>.p</h1></button>                </th>
                 <th>
-<button class="button" id="randomPageButton"><h1>.py</h1></button>                </th>
+                    <button class="button" onclick="addPoint('python', 'quest4.html')"><h1>.py</h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../4/quest1.html", "../4/quest2.html", "../4/quest3.html", "../4/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>
