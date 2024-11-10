@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 7 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_html.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -22,28 +22,32 @@
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        <pre><code class="language-html">
 &lt;title&gt;Titre de l'onglet&lt;/title&gt;        </code></pre>
-            
+<table>
+    <thead>
+        <th>
+            <div class="score">
+                <p>Score Web: <span id="webScore"></span></p>
+            </div>
+        </th>
+        <th>
+            <button class="retour" onclick="arrow('web', 'quest6.html', 6)"><img src="../textures/leftArrow.png" alt="" width=50px height=50px></button>
+        </th>        
+    </thead>
+</table> 
         <table>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Pour créer des feuilles de style</h1></a>                </th>
+                    <button class="button" onclick="addPoint('web', 'quest8.html')"><h1>Pour créer des pages web</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Pour créer des programmes informatique</h1></a>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Pour créer des programmes informatique</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>Pour créer des application</h1></a>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Pour créer des application</h1></button>                </th>
                 <th>
-<button class="button" id="randomPageButton"><h1>Pour créer des pages web</h1></button>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Pour créer des feuilles de style</h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../8/quest1.html", "../8/quest2.html", "../8/quest3.html", "../8/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>

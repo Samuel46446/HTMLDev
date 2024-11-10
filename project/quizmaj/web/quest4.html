@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 4 </title>
-      <link rel="icon" href="../textures/logo.png" type="image/png">
+      <link rel="icon" href="../textures/logo_php.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -18,7 +18,7 @@
     <body>
 
         <div class="title"><h2>Niveau 4</h2></div>
-        <div class="question"><h1>Que produit le programme php suivant : :</h1></div>
+        <div class="question"><h1>Que produit le programme php suivant ?</h1></div>
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
 <pre><code class="language-php">
@@ -28,28 +28,32 @@
         print(i);
     }
 ?&gt;        </code></pre>
-            
+<table>
+    <thead>
+        <th>
+            <div class="score">
+                <p>Score Web: <span id="webScore"></span></p>
+            </div>
+        </th>
+        <th>
+            <button class="retour" onclick="arrow('web', 'quest3.html', 3)"><img src="../textures/leftArrow.png" alt="" width=50px height=50px></button>
+        </th>        
+    </thead>
+</table>   
         <table>
             <thead>
                 <th>
-<button class="button" id="randomPageButton"><h1>affiche des entiers de 0 à 4</h1></button>                </th>
+                    <button class="button" onclick="addPoint('web', 'quest5.html')"><h1>affiche des entiers de 0 à 4</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>affiche 6 entiers </h1></a>                </th>
+                    <button class="button" onclick="bad('quest5.html')"><h1>affiche 6 entiers </h1></button>                </th>
             </thead>
             <thead>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>affiche des entiers de 1 à 4</h1></a>                </th>
+                    <button class="button" onclick="bad('quest5.html')"><h1>affiche des entiers de 1 à 4</h1></button>                </th>
                 <th>
-<a href="../perdu.html" class="button-link"><h1>affiche des doubles</h1></a>                </th>
+                    <button class="button" onclick="bad('quest5.html')"><h1>affiche des entiers de 0 à 5</h1></button>                </th>
             </thead>
         </table>
-        
-        <script>
-            const pages = ["../5/quest1.html", "../5/quest2.html", "../5/quest3.html", "../5/quest4.html"];
-            document.getElementById('randomPageButton').onclick = function() {
-                const randomPage = pages[Math.floor(Math.random() * pages.length)];
-                window.location.href = randomPage;
-            };
-        </script>
+        <script src="../settings.js"></script>
   </body>
 </html>
