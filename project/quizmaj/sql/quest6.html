@@ -17,14 +17,14 @@
     </head>
     <body>
         <div class="title"><h2>Niveau 6</h2></div>
-        <div class="question"><h1>La table etudiant et note possèdent tout deux eno, comment permettre une égalité pour une requête ?</h1></div>
+        <div class="question"><h1>Les tables etudiants et notes possèdent tout deux la clé eno, comment faire une jointure pour une requête ?</h1></div>
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
 <pre><code class="language-sql">
---etudiant(eno, nom);
---note(nno, eno#, note);
+--etudiants(eno, nom);
+--notes(nno, eno#, note);
 
 SELECT ?????
-FROM etudiant, note
+FROM etudiants, notes
 WHERE ??????;
 </code></pre>
 <table>
@@ -48,9 +48,9 @@ WHERE ??????;
             </thead>
             <thead>
                 <th>
-                    <button class="button" onclick="bad('quest7.html')"><h1>On écrit note=note SQL est assez intelligent</h1></button>                </th>
+                    <button class="button" onclick="bad('quest7.html')"><h1>On écrit eno=eno SQL est assez intelligent</h1></button>                </th>
                 <th>
-                    <button class="button" onclick="bad('quest7.html')"><h1>On change le nom de la clé eno dans note</h1></button>                </th>
+                    <button class="button" onclick="bad('quest7.html')"><h1>On change le nom de la clé eno dans notes</h1></button>                </th>
             </thead>
         </table>
         <script src="../settings.js"></script>
