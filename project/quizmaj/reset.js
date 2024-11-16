@@ -5,6 +5,7 @@ function resetTotal()
     localStorage.setItem('pythonPoint', 0);
     localStorage.setItem('webPoint', 0);
     localStorage.setItem('sqlPoint', 0);
+    localStorage.setItem('csPoint', 0);
 }
 history.forward();
 resetTotal();

@@ -4,6 +4,7 @@ if (!localStorage.getItem('cppPoint')) localStorage.setItem('cppPoint', 0);
 if (!localStorage.getItem('pythonPoint')) localStorage.setItem('pythonPoint', 0);
 if (!localStorage.getItem('webPoint')) localStorage.setItem('webPoint', 0);
 if (!localStorage.getItem('sqlPoint')) localStorage.setItem('sqlPoint', 0);
+if (!localStorage.getItem('csPoint')) localStorage.setItem('csPoint', 0);
 
 history.forward();
 
@@ -63,3 +64,4 @@ updateScores('cpp');
 updateScores('python');
 updateScores('web');
 updateScores('sql');
+updateScores('cs');

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <title> Question 8 </title>
+      <link rel="icon" href="../textures/logo_cpp.png" type="image/png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+          <!-- Inclusion de Highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <!-- Lancer Highlight.js -->
+    <script>hljs.highlightAll();</script>
+
+    </head>
+    <body>
+
+        <div class="title"><h2>Niveau 8</h2></div>
+        <div class="question"><h1>En C++ comment déclarer cette fonction func pour la rendre publique ?</h1></div>
+
+<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
+<pre><code class="language-cpp">
+class Somme
+{
+    ????
+    void func()
+    {       std::cout << "Bienvenue dans la fonction func" << std::endl;
+    }
+};        </code></pre>
+<table>
+    <thead>
+        <th>
+            <div class="score">
+                <p>Score C++: <span id="cppScore"></span></p>
+            </div>
+        </th>
+        <th>
+            <button class="retour" onclick="arrow('cpp', 'quest7.html', 7)"><img src="../textures/leftArrow.png" alt="" width=50px height=50px></button>
+        </th>
+    </thead>
+</table>
+        <table>
+            <thead>
+                <th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>public void func()</h1></button>                </th>
+                <th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>public Somme()</h1></button>                </th>
+            </thead>
+            <thead>
+                <th>
+                    <button class="button" onclick="addPoint('cpp', 'quest9.html')"><h1>public:</h1></button>                </th>
+                <th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>public -></h1></button>                </th>
+            </thead>
+        </table>
+        <script src="../settings.js"></script>
+  </body>
+</html>
