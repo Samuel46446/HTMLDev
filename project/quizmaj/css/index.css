@@ -3,6 +3,7 @@
     background-color: #4CAF50;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
 .score{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
