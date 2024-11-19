@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <title> Question 1 </title>
+      <link rel="icon" href="../textures/logo_sql.png" type="image/png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../css/index.css">
+      <!-- Inclusion de Highlight.js -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+      <!-- Lancer Highlight.js -->
+      <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div class="title"><h2>Niveau 1</h2></div>
+        <div class="question"><h1>Quelle est la variable manquante permettant la création d'une table SQL ?</h1></div>
+        <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>
+        <pre><code class="language-sql">
+            ??? TABLE MYTABLE(
+                ID INTEGER PRIMARY KEY,
+                NAME VARCHAR(50)
+            );
+        </code></pre>
+        <table>
+            <thead>
+                <th>
+                    <div class="score">
+                        <p>Score SQL: <span id="sqlScore"></span></p>
+                    </div>
+                </th>
+            </thead>
+        </table>
+        <table>
+            <thead>
+                <th>
+                    <button class="button" onclick="addPoint('sql', 'quest2.html')"><h1>CREATE</h1></button>
+                </th>
+                <th>
+                    <button class="button" onclick="bad('quest2.html')"><h1>MAKE</h1></button>
+                </th>
+            </thead>
+            <thead>
+                <th>
+                    <button class="button" onclick="bad('quest2.html')"><h1>SET</h1></button>
+                </th>
+                <th>
+                    <button class="button" onclick="bad('quest2.html')"><h1>NEW</h1></button>
+                </th>
+            </thead>
+        </table>
+        <script src="../settings.js"></script>
+  </body>
+</html>

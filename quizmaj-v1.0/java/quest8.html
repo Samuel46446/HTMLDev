@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <title> Question 8 </title>
+      <link rel="icon" href="../textures/logo_java.png" type="image/png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+          <!-- Inclusion de Highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <!-- Lancer Highlight.js -->
+    <script>hljs.highlightAll();</script>
+
+    </head>
+    <body>
+
+        <div class="title"><h2>Niveau 8</h2></div>
+        <div class="question"><h1>Avec la classe java suivante comment créer t'on l'objet ?</h1></div>
+
+<div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
+<pre><code class="language-java">
+public class Train
+{
+    private String d,a;
+    private String t;
+    
+    public Train(String depart, String arrive, String time)
+    {
+        this.d=depart;
+        this.a=arrive;
+        this.t=time;
+    }
+}        </code></pre>
+<table>
+    <thead>
+        <th>
+            <div class="score">
+                <p>Score Java: <span id="javaScore"></span></p>
+            </div>
+        </th>
+        <th>
+            <button class="retour" onclick="arrow('java', 'quest7.html', 7)"><img src="../textures/leftArrow.png" alt="" width=50px height=50px></button>
+        </th>
+    </thead>
+</table> 
+        <table>
+            <thead>
+                <th>
+                    <button class="button" onclick="addPoint('java', 'quest9.html')"><h1>Train train = new Train("Paris", "Marseille", "12h00");</h1></button>                </th>
+                <th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>Train train = Train();</h1></button>                </th>
+            </thead>
+            <thead>
+                <th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>Train train = new Train();</h1></button>                </th>
+                <th>
+                    <button class="button" onclick="bad('quest9.html')"><h1>Train train = Train("Paris", "Marseille", "12h00");</h1></button>                </th>
+            </thead>
+        </table>
+        <script src="../settings.js"></script>
+  </body>
+</html>
