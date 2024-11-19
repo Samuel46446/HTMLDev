@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
       <title> Question 7 </title>
-      <link rel="icon" href="../textures/logo_cpp.png" type="image/png">
+      <link rel="icon" href="../textures/logo_cs.png" type="image/png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -18,38 +18,39 @@
     <body>
 
         <div class="title"><h2>Niveau 7</h2></div>
-        <div class="question"><h1>Le C++ est un language qu'on qualifie de ?</h1></div>
+        <div class="question"><h1>Le C# est un language qu'on qualifie d'orienter ?</h1></div>
 
 <div class="home"><a href="../index.html" class="button-link"><img src="../textures/home_button.png" alt="" width=50px height=50px></a></div>        
-<pre><code class="language-cpp">
-int main()
-{
-    std::cout << "Hello world" << std::endl;
-}        </code></pre>
+<pre><code class="language-cs">
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello world");
+    }
+</code></pre>
 <table>
     <thead>
         <th>
             <div class="score">
-                <p>Score C++: <span id="cppScore"></span></p>
+                <p>Score C#: <span id="csScore"></span></p>
             </div>
         </th>
         <th>
-            <button class="retour" onclick="arrow('cpp', 'quest6.html', 6)"><img src="../textures/leftArrow.png" alt="" width=50px height=50px></button>
+            <button class="retour" onclick="arrow('cs', 'quest6.html', 6)"><img src="../textures/leftArrow.png" alt="" width=50px height=50px></button>
         </th>
     </thead>
 </table>            
         <table>
             <thead>
                 <th>
-                    <button class="button" onclick="bad('quest8.html')"><h1>Interprété</h1></button>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Binaire</h1></button>                </th>
                 <th>
-                    <button class="button" onclick="bad('quest8.html')"><h1>Objet</h1></button>                </th>
+                    <button class="button" onclick="addPoint('cs', 'quest8.html')"><h1>Objet</h1></button>                </th>
             </thead>
             <thead>
                 <th>
-                    <button class="button" onclick="addPoint('cpp', 'quest8.html')"><h1>Compilé</h1></button>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Compilation</h1></button>                </th>
                 <th>
-                    <button class="button" onclick="bad('quest8.html')"><h1>Balisage</h1></button>                </th>
+                    <button class="button" onclick="bad('quest8.html')"><h1>Cool</h1></button>                </th>
             </thead>
         </table>
         <script src="../settings.js"></script>
