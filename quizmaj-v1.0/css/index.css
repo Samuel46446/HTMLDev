@@ -5,6 +5,7 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
 .score{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 120px;
@@ -28,13 +29,6 @@
     cursor: pointer;
 }
 
-.image{
-    display: block;
-    float: left;
-    margin: 100px;
-    text-align: center;
-}
-
 body {
     background-color: rgb(31, 30, 32);
 }
@@ -44,18 +38,15 @@ table {
     margin: 20px auto; /* Centrer le tableau */
     border-collapse: collapse; /* Fusionner les bordures */
 }
+
 th, td {
     padding: 10px;
     border: 1px solid rgb(31, 30, 32); /* Bordure autour des cellules */
     text-align: center; /* Centrer le texte dans les cellules */
 }
+
 th {
     background-color: rgb(31, 30, 32);
-}
-
-.title{
-    font-style: normal;
-    color: #13b752;
 }
 
 pre, code {
@@ -70,28 +61,6 @@ pre, code {
 
 .question{
     color: coral;
-}
-
-.button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Vert */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: Arial, sans-serif; /* Utiliser la même police que le bouton de base */
-}
-
-.button-link:hover {
-    background-color: #45a049; /* Couleur au survol */
-}
-
-.loose{
-    color: blueviolet;
-    text-align: center;
-    text-size-adjust: 100px;
 }
 
 .home{
