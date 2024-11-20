@@ -71,3 +71,19 @@ pre, code {
     margin-right: 50px;
     background-color: #4CAF50;
 }
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Utiliser la même police que le bouton de base */
+}
+
+.button-link:hover {
+    background-color: #45a049; /* Couleur au survol */
+}
