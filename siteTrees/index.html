@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Page</title>
+    <style>
+
+        .alert {
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    .alert.success {
+        background-color: #4caf50;
+    }
+
+    .alert.warning {
+        background-color: #ff9800;
+    }
+
+    .alert.error {
+        background-color: #f44336;
+    }
+
+    .alert.info {
+        background-color: #2196f3;
+    }
+
+    .alert strong {
+        font-weight: bold;
+    }</style>
+</head>
+<body>
+    <h1 aria-label="Chapitres">Chapitres</h1>
+    <a href="#1" aria-label="Chapitre : Art de l'Arbre dans une plaine">Art de l'Arbre dans une plaine</a><br>
+    <a href="#2" aria-label="Chapitre : Réflexion sur la nature">Réflexion sur la nature</a><br>
+    <a href="#3" aria-label="Chapitre : Les éléments de la nature">Les éléments de la nature</a><br>
+    <a href="#4" aria-label="Chapitre : Musiques sur la nature">Musiques sur la nature</a><br>
+    <a href="#5" aria-label="Chapitre : Les arbres de la nature">Les arbres de la nature</a><br>
+
+    <header id="1" aria-label="Art de l'Arbre dans une plaine">
+        <figure>
+            <img src="free-nature-images.jpg" width="300" height="200" alt="">
+            <figcaption aria-label="Représentation d'un arbre dans une plaine">Image Un arbre dans une plaine</figcaption>
+        </figure>
+    </header>
+
+    <section id="2" aria-label="Réflexion sur la nature">
+    <q>La nature est l'un des plus beaux cadeaux du monde</q>
+    <article>
+        <p>Peut-ont considéré ceci comme véridique ?</p>
+        <blockquote>Oui car la beauté de la nature est infiniment plus complexe que ce qu'on pourra découvrir nous même</blockquote>
+        <cite>L'auteur dans ce livre explique son admiration de la nature et le fais de survivre dans ce milieu</cite>
+    </article>
+    </section>
+
+    <section id="3" aria-label="Les éléments de la nature">
+        <ol>
+            <li>L'air 🍃</li>
+            <li>L'eau 💧</li>
+            <li>La Température 🧊🍹</li>
+        </ol>
+        <p>Et le silence 🤫 de cette nature est <q>ressourçant et inspirant pour l'écriture</q> explique l'auteur.</p>
+    </section>
+
+    <section id="4" aria-label="Musiques sur la nature">
+        <p>Voici des musiques parfaites pour se ressourcer avec la nature :</p>
+        <nav>
+            <ul>
+                <li><a aria-label="Une musique bienveillante (lien vers soundcloud)" href="https://soundcloud.com/nature-sounds">Une musique bienveillante</a></li>
+                <li><a aria-label="Une musique de thème jungle (lien vers soundcloud)" href="https://soundcloud.com/junglesounds-music">Une musique de thème jungle</a></li>
+                <li><a aria-label="Une musique d'eau claire (lien vers soundcloud)" href="https://soundcloud.com/zonedeautranquil/sets/diversite-de-leau-musique-de">Une musique d'eau claire</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <footer id="5" aria-label="Les arbres de la nature">
+        <h1>Les arbres de la nature sont également très important :</h1>
+        <ul>
+            <li><p aria-label="Les chênes">Les chênes (plus d'info en cliquant sur l'image)</p>
+            <a href="https://fr.wikipedia.org/wiki/Ch%C3%AAne"><img src="oak.jpg" width="300" height="200" alt="Lien vers le chêne (Wikipedia)"></a></li>
+            <li><p aria-label="Les bouleaux">Les bouleaux (plus d'info en cliquant sur l'image)</p>
+            <a href="https://fr.wikipedia.org/wiki/Bouleau"><img src="bouleau-blanc.jpeg" width="300" height="200" alt="Lien vers le bouleau (Wikipedia)"></a></li>
+            <li><p aria-label="Les acacias">Les acacias (plus d'info en cliquant sur l'image)</p>
+            <a href="https://fr.wikipedia.org/wiki/Acacia"><img src="acacia.jpg" width="300" height="200" alt="Lien vers l'acacia (Wikipedia)"></a></li>
+            <li><p aria-label="Les acajous">Les acajous (plus d'info en cliquant sur l'image)</p>
+            <a href="https://fr.wikipedia.org/wiki/Acajou_des_Antilles"><img src="jungle.jpg" width="300" height="200" alt="Lien vers l'acajou (Wikipedia)"></a></li>
+            <li><p aria-label="Les cerisiers">Les cerisiers (plus d'info en cliquant sur l'image)</p>
+            <a href="https://fr.wikipedia.org/wiki/Cerisier"><img src="cerisier.jpg" width="300" height="200" alt="Lien vers le cerisier (Wikipedia)"></a></li>
+        </ul>
+        <p>Ceci même représente la diversité de la nature selon l'auteur</p>
+    </footer>
+
+    <h1>Vous pouvez vous inscrire à la newsletter des arbres et reçevoir des conseils de vie</h1>
+    <form id="myForm">
+        <label>
+            <input type="text" name="nom" placeholder="Votre nom" required><br>
+            <input type="text" name="prénom" placeholder="Votre prénom" required><br>
+        </label>
+        <label>
+            <input type="email" name="email" placeholder="Votre email" required><br>
+        </label>
+        <label>
+            <input type="tel" name="tel" placeholder="Votre telephone" required><br>
+        </label>
+        <input type="submit" id="subscribe-btn" value="S'inscrire à la newsletter">
+    </form>
+    <p id="message" style="display:none; color: green;">Merci, vous recevrez les newsletters très bientôt !</p>
+
+    <script>
+        // JavaScript pour gérer le clic sur le bouton
+        document.getElementById('subscribe-btn').addEventListener('click', function() {
+            const emailInput = document.getElementById('email').value;
+
+            // Vérifie si le champ email n'est pas vide
+            if (emailInput.trim() !== '') {
+                // Affiche le message de succès
+                const messageParagraph = document.getElementById('message');
+                messageParagraph.style.display = 'block';
+            } else {
+                alert('Veuillez entrer une adresse email valide.');
+            }
+        });
+
+        function showNotification() {
+            const notification = document.getElementById("notification");
+            notification.style.display = "block";
+
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 3000); // Masquer après 3 secondes
+        }
+    </script>
+    <div id="notification" class="alert info" role="alert" aria-live="polite" style="display: none;">
+        <strong>Info :</strong> Exemple de notification dynamique.
+    </div>
+    <button onclick="showNotification()">Afficher une notification</button>
+</body>
+</html>
